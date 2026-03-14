@@ -504,6 +504,13 @@ nav .container {
   font-style: italic;
 }
 
+.photo-coming-soon {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--secondary);
+  padding: 40px 0;
+}
+
 /* ── Footer ───────────────────────────────────────── */
 
 footer {

@@ -322,15 +322,7 @@ function App() {
             Nature, daily life, and the spaces between.
           </p>
 
-          <div className="photo-grid">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="photo-placeholder">
-                [ photograph ]
-              </div>
-            ))}
-          </div>
-
-          <p className="photo-note">Portfolio in progress.</p>
+          <p className="photo-coming-soon">Coming soon.</p>
         </div>
       </section>
 
