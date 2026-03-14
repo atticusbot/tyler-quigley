@@ -43,12 +43,12 @@ function App() {
             <h1 className="hero-name">Tyler P. Quigley</h1>
             <p className="hero-tagline">Ethologist. Open science builder. Science writer.</p>
             <p className="hero-bio">
-              I earned my Ph.D. studying the honeybee blood-brain barrier at Arizona State
-              University, where I developed novel techniques spanning behavioral, cellular, and
-              molecular biology to understand brain-body-environment interactions. Since then,
-              I've worked at the intersection of science, law, and technology: evaluating IP in
-              emerging biotech fields, leading scientific strategy for a decentralized research
-              organization, and building AI systems for small businesses.
+              I spent nine years at Arizona State University characterizing the honeybee
+              blood-brain barrier — developing techniques that didn't yet exist to answer
+              questions that hadn't been asked. Since then, I've worked at the intersection
+              of science, law, and technology: evaluating IP in emerging biotech fields,
+              leading scientific strategy for a decentralized research organization, and
+              building AI systems for small businesses.
             </p>
             <div className="hero-links">
               <a href="#">Download CV ↓</a>
