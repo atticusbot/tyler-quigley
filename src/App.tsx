@@ -51,7 +51,7 @@ function App() {
               building AI systems for small businesses.
             </p>
             <div className="hero-links">
-              <a href="#">Download CV ↓</a>
+              <a href="/tyler-quigley-cv.pdf" download>Download CV ↓</a>
               <a href="mailto:tyler@baysideai.co">tyler@baysideai.co</a>
               <a href="https://www.linkedin.com/in/tyler-quigley-ph-d-202931123" target="_blank" rel="noopener noreferrer">LinkedIn →</a>
             </div>
