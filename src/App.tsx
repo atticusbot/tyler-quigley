@@ -43,9 +43,9 @@ function App() {
             <h1 className="hero-name">Tyler P. Quigley</h1>
             <p className="hero-tagline">Ethologist. Open science builder. Science writer.</p>
             <p className="hero-bio">
-              I spent nine years at Arizona State University characterizing the honeybee
-              blood-brain barrier — developing techniques that didn't yet exist to answer
-              questions that hadn't been asked. Since then, I've worked at the intersection
+              At Arizona State University, I characterized the honeybee blood-brain barrier —
+              developing techniques that didn't yet exist to answer questions that hadn't
+              been asked. Since then, I've worked at the intersection
               of science, law, and technology: evaluating IP in emerging biotech fields,
               leading scientific strategy for a decentralized research organization, and
               building AI systems for small businesses.
