@@ -129,6 +129,27 @@ function App() {
                 Opinion in Insect Science, 35, 132–137
               </span>
             </li>
+
+            <li className="pub-item">
+              <a
+                href="https://drive.google.com/file/d/1QjicbQagZ1QJJkK3oleVCmJosvIS7oGG/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Honeybee Workers as Models of Aging
+              </a>
+              <span className="pub-meta">
+                Quigley, T.P., Amdam, G.V., &amp; Rueppell, O. (2018) · Conn's
+                Handbook of Models for Human Aging, 533–547 ·{' '}
+                <a
+                  href="https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128113530000403"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ScienceDirect →
+                </a>
+              </span>
+            </li>
           </ul>
         </div>
       </section>
@@ -315,8 +336,13 @@ function App() {
         <div className="container narrow">
           <h2 className="section-title">Resume</h2>
 
-          <a className="resume-download" href="/tyler-quigley-cv.pdf" download>
-            Download full résumé ↓
+          <a
+            className="resume-download"
+            href="https://drive.google.com/file/d/1PISmKxt2GCtWJQNOOFS7mNq-uaxo6Oxb/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View full résumé →
           </a>
 
           <div className="timeline">
