@@ -31,9 +31,12 @@ function App() {
         />
         <h1 className="name">Tyler P. Quigley, Ph.D.</h1>
         <p className="bio">
-          I evaluate and write about science — from honeybee neurobiology to
-          the AI systems now doing biological research — and translate it
-          for expert and public audiences.
+          Scientist and writer working across biology, intellectual property,
+          decentralized science, and AI.
+        </p>
+        <p className="bio">
+          I turn complex research into clear arguments, useful decisions, and
+          stories people can follow.
         </p>
         <nav className="main-nav">
           <a href="#science">Science</a>
@@ -323,6 +326,16 @@ function App() {
                   rel="noopener noreferrer"
                 >
                   Opening the Mushroom Pharmacopeia: The Case of Norbaeocystin →
+                </a>
+                <span className="writing-links-source">Psychedelic Review</span>
+              </li>
+              <li>
+                <a
+                  href="https://psychedelicreview.com/kambo-another-psychedelic-amphibian/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kambô: Another Psychedelic Amphibian? →
                 </a>
                 <span className="writing-links-source">Psychedelic Review</span>
               </li>

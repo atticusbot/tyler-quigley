@@ -115,6 +115,10 @@ section {
   line-height: 1.7;
   color: var(--secondary);
   max-width: 480px;
+  margin-bottom: 12px;
+}
+
+.bio:last-of-type {
   margin-bottom: 32px;
 }
 
