@@ -146,12 +146,59 @@ function App() {
             </p>
             <a
               className="writing-sub-link"
-              href="https://psychedelicscience.substack.com/archive?sort=top"
+              href="https://psychedelicscience.substack.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Read the archive →
+              Read the newsletter →
             </a>
+            <ul className="writing-links">
+              <li>
+                <a
+                  href="https://psychedelicscience.substack.com/p/the-chemistry-of-psychedelics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Chemistry of Psychedelics →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://psychedelicscience.substack.com/p/good-friday-journal-club-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Good Friday Journal Club #4 →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://psychedelicscience.substack.com/p/my-myc-mind"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  My, Myc, Mind →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://psychedelicscience.substack.com/p/how-cannabinoids-block-covid-19"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  How Cannabinoids Block COVID-19 →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://psychedelicscience.substack.com/p/ayahuasca-vine-and-its-anti-inflammatory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ayahuasca Vine and Its Anti-Inflammatory Effects →
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div className="writing-subsection">
@@ -161,6 +208,33 @@ function App() {
               State University, 2016–2018.
             </p>
             <ul className="writing-links">
+              <li>
+                <a
+                  href="https://askabiologist.asu.edu/explore/detect-protect"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Detect and Protect →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://askabiologist.asu.edu/questions/why-we-dream"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Why We Dream →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://askabiologist.asu.edu/plosable/bee-microbiome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bacteria in the Belly of the Bee →
+                </a>
+              </li>
               <li>
                 <a
                   href="https://askabiologist.asu.edu/cicada-life-cycle"
@@ -181,11 +255,38 @@ function App() {
               </li>
               <li>
                 <a
-                  href="https://askabiologist.asu.edu/questions/why-we-dream"
+                  href="https://askabiologist.asu.edu/explore/antibiotics-bacteria"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Why We Dream →
+                  Antibiotics vs Bacteria: An Evolutionary Battle →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://askabiologist.asu.edu/evmed-edit/hospital-antibiotic-resistance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Down the Drain: Hospital Sewage and Antibiotic Resistance →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://askabiologist.asu.edu/plosable/spies-among-ants"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spies Among Ants →
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://askabiologist.asu.edu/explore/cicadas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rising Cicadas →
                 </a>
               </li>
             </ul>
@@ -193,7 +294,18 @@ function App() {
 
           <div className="writing-subsection">
             <h3>Other</h3>
-            <p className="writing-note">More coming soon.</p>
+            <ul className="writing-links">
+              <li>
+                <a
+                  href="https://psychedelicreview.com/opening-the-mushroom-pharmacopeia-the-case-of-norbaeocystin/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Opening the Mushroom Pharmacopeia: The Case of Norbaeocystin →
+                </a>
+                <span className="writing-links-source">Psychedelic Review</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -225,16 +337,6 @@ function App() {
               <p className="timeline-desc">
                 Advise on preclinical strategy, lead-candidate selection, and
                 IND-enabling study design.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">2025 – Present</p>
-              <p className="timeline-title">Founder</p>
-              <p className="timeline-org">Bayside AI</p>
-              <p className="timeline-desc">
-                Build AI tools and automations for small businesses, from
-                scoping through delivery.
               </p>
             </div>
 

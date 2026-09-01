@@ -230,21 +230,31 @@ section:not(:first-of-type) {
 }
 
 .writing-sub-link {
+  display: inline-block;
   font-family: var(--font-mono);
   font-size: 13px;
+  margin-bottom: 18px;
 }
 
 .writing-links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
 }
 
 .writing-links a {
   font-family: var(--font-mono);
   font-size: 13px;
+}
+
+.writing-links-source {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--secondary);
+  margin-top: 2px;
 }
 
 .writing-note {
