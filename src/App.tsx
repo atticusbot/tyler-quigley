@@ -38,6 +38,22 @@ function App() {
           I turn complex research into clear arguments, useful decisions, and
           stories people can follow.
         </p>
+        <nav className="social-links">
+          <a
+            href="https://www.linkedin.com/in/tyler-quigley-ph-d-202931123/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://x.com/TyQuig"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+        </nav>
         <nav className="main-nav">
           <a href="#science">Science</a>
           <a href="#writing">Writing</a>
@@ -459,14 +475,6 @@ function App() {
           <span>Tyler P. Quigley</span>
           <span className="sep">·</span>
           <a href="mailto:tpquigley13@gmail.com">tpquigley13@gmail.com</a>
-          <span className="sep">·</span>
-          <a
-            href="https://www.linkedin.com/in/tyler-quigley-ph-d-202931123"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
           <span className="sep">·</span>
           <span>&copy; 2026</span>
         </div>
