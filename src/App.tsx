@@ -1,44 +1,640 @@
-import { useEffect } from 'react'
-
 function App() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
-          }
-        })
-      },
-      { threshold: 0.1 }
-    )
-
-    document.querySelectorAll('.fade-section').forEach((el) => {
-      observer.observe(el)
-    })
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
     <>
-      {/* ── TOP ────────────────────────────────────── */}
-      <header className="top">
-        <img
-          src="/profile.jpg"
-          alt="Tyler P. Quigley"
-          className="profile-photo"
-        />
-        <h1 className="name">Tyler P. Quigley, Ph.D.</h1>
-        <p className="bio">
-          Scientist and writer working across biology, intellectual property,
-          decentralized science, and AI.
-        </p>
-        <p className="bio">
-          I turn complex research into clear arguments, useful decisions, and
-          stories people can follow.
-        </p>
-        <nav className="social-links">
+      {/* ── STATUS BAR ─────────────────────────────── */}
+      <div className="statusbar">
+        <div className="shell label">
+          <span>Currently</span>
+          <span className="now">
+            Scientific evaluation contracting, Edison Scientific
+          </span>
+          <span className="x">✕</span>
+          <span className="open">Open to full-time roles</span>
+        </div>
+      </div>
+
+      {/* ── MASTHEAD ───────────────────────────────── */}
+      <header className="masthead">
+        <div className="shell">
+          <div className="plate-wrap">
+            <img src="/profile.jpg" alt="Tyler P. Quigley" />
+            <div className="plate-caption label">
+              <span>Quigley, T. P.</span>
+              <span>Ph.D. 2024</span>
+            </div>
+          </div>
+
+          <div className="identity">
+            <h1 className="name">
+              Tyler P. Quigley
+              <span className="credential">Ph.D., Animal Behavior</span>
+            </h1>
+            <p className="statement">
+              I turn complex research into clear arguments, useful decisions, and{' '}
+              <em>stories people can follow.</em>
+            </p>
+            <p className="descriptor">
+              Scientist and writer working across biology, intellectual property,
+              decentralized science, and AI.
+            </p>
+            <div className="contact">
+              <a
+                href="https://www.linkedin.com/in/tyler-quigley-ph-d-202931123/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <span className="x">✕</span>
+              <a
+                href="https://x.com/TyQuig"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+              <span className="x">✕</span>
+              <a href="mailto:tpquigley13@gmail.com">tpquigley13@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* ── SECTION NAV ────────────────────────────── */}
+      <nav className="sectionnav">
+        <div className="shell">
+          <a href="#science">
+            Science <span className="count">07</span>
+          </a>
+          <a href="#writing">
+            Writing <span className="count">16+</span>
+          </a>
+          <a href="#resume">
+            Resume <span className="count">09</span>
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        {/* ── SCIENCE ──────────────────────────────── */}
+        <section className="strata" id="science">
+          <div className="shell">
+            <div className="rail">
+              <h2>Science</h2>
+              <div className="tick"></div>
+              <p className="label">Seven publications ✕ 2018–2026</p>
+              <p className="note">
+                Ultrastructure and permeability of the honeybee blood-brain
+                barrier, plus reviews on social modulation of ageing.
+              </p>
+            </div>
+
+            <div className="stack">
+              <ul className="pubs">
+                <li>
+                  <span className="year">2024</span>
+                  <div>
+                    <a
+                      href="https://drive.google.com/file/d/1vRGy15Fo1t0LBUt1Al5YcDK7Q6Yy0nv1/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="title">
+                        The Structure and Function of the Honeybee Blood-Brain
+                        Barrier
+                      </span>
+                    </a>
+                    <span className="meta">
+                      Doctoral dissertation <span className="x">✕</span>{' '}
+                      <span className="venue">Arizona State University</span>
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="year">2026</span>
+                  <div>
+                    <a
+                      href="https://doi.org/10.1101/2024.09.27.615259"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="title">
+                        Effect of Aging and <em>Varroa</em> Parasitism on the
+                        Paracellular and Transcellular Permeability of the
+                        Honeybee Blood-Brain Barrier
+                      </span>
+                    </a>
+                    <span className="meta">
+                      Quigley, T. P., &amp; Amdam, G. V. <span className="x">✕</span>{' '}
+                      <span className="venue">PLOS ONE</span> 21(3), e0343142
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="year">2024</span>
+                  <div>
+                    <a
+                      href="https://doi.org/10.1101/2024.09.27.615080"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="title">
+                        Ultrastructural Organization of the Honeybee Blood-Brain
+                        Barrier and Comparison with Age
+                      </span>
+                    </a>
+                    <span className="flag">In review</span>
+                    <span className="meta">
+                      Quigley, T. P., &amp; Amdam, G. V. <span className="x">✕</span>{' '}
+                      <span className="venue">bioRxiv</span>{' '}
+                      10.1101/2024.09.27.615080
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="year">—</span>
+                  <div>
+                    <span className="untitled">
+                      Tracking Vitellogenin Across the Honeybee Blood-Brain
+                      Barrier with Nanoscale Secondary Ion Mass Spectrometry
+                    </span>
+                    <span className="flag">In preparation</span>
+                    <span className="meta">Quigley, T. P., &amp; Amdam, G. V.</span>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="year">2021</span>
+                  <div>
+                    <a
+                      href="https://doi.org/10.1098/rstb.2019.0738"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="title">
+                        Social Modulation of Ageing: Mechanisms, Ecology,
+                        Evolution
+                      </span>
+                    </a>
+                    <span className="meta">
+                      Quigley, T. P., &amp; Amdam, G. V. <span className="x">✕</span>{' '}
+                      <span className="venue">Phil. Trans. R. Soc. B</span>{' '}
+                      376(1823), 20190738
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="year">2019</span>
+                  <div>
+                    <a
+                      href="https://doi.org/10.1016/j.cois.2019.06.012"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="title">
+                        Honey Bees as Bioindicators of Changing Global
+                        Agricultural Landscapes
+                      </span>
+                    </a>
+                    <span className="meta">
+                      Quigley, T. P., Amdam, G. V., &amp; Harwood, G.{' '}
+                      <span className="x">✕</span>{' '}
+                      <span className="venue">
+                        Current Opinion in Insect Science
+                      </span>{' '}
+                      35, 132–137
+                    </span>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="year">2018</span>
+                  <div>
+                    <a
+                      href="https://drive.google.com/file/d/1QjicbQagZ1QJJkK3oleVCmJosvIS7oGG/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="title">
+                        Honeybee Workers as Models of Aging
+                      </span>
+                    </a>
+                    <span className="meta">
+                      Quigley, T. P., Amdam, G. V., &amp; Rueppell, O.{' '}
+                      <span className="x">✕</span>{' '}
+                      <span className="venue">
+                        Conn’s Handbook of Models for Human Aging
+                      </span>{' '}
+                      533–547 <span className="x">✕</span>{' '}
+                      <a
+                        href="https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128113530000403"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        ScienceDirect
+                      </a>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* ── WRITING ──────────────────────────────── */}
+        <section className="strata" id="writing">
+          <div className="shell">
+            <div className="rail">
+              <h2>Writing</h2>
+              <div className="tick"></div>
+              <p className="label">Selected pieces ✕ three outlets</p>
+              <p className="note">
+                Psychedelic pharmacology and science education. A sample, not the
+                full archive.
+              </p>
+            </div>
+
+            <div className="stack">
+              <div className="venuegroup">
+                <div className="venuehead">
+                  <h3>The Tab</h3>
+                  <span className="run">2021–present</span>
+                  <span className="spacer"></span>
+                  <a
+                    className="visit"
+                    href="https://psychedelicscience.substack.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read the newsletter →
+                  </a>
+                </div>
+                <p className="venuedesc">
+                  Self-published psychedelic science newsletter. Selected pieces:
+                </p>
+                <ul className="pieces">
+                  <li>
+                    <a
+                      href="https://psychedelicscience.substack.com/p/the-chemistry-of-psychedelics"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>The Chemistry of Psychedelics</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://psychedelicscience.substack.com/p/good-friday-journal-club-4"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Good Friday Journal Club #4</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://psychedelicscience.substack.com/p/my-myc-mind"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>My, Myc, Mind</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://psychedelicscience.substack.com/p/how-cannabinoids-block-covid-19"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>How Cannabinoids Block COVID-19</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://psychedelicscience.substack.com/p/ayahuasca-vine-and-its-anti-inflammatory"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Ayahuasca Vine and Its Anti-Inflammatory Effects</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="venuegroup">
+                <div className="venuehead">
+                  <h3>Ask A Biologist</h3>
+                  <span className="run">2016–2018</span>
+                  <span className="spacer"></span>
+                  <span className="run">Arizona State University</span>
+                </div>
+                <p className="venuedesc">
+                  Educational writing for K–12 and general audiences.
+                </p>
+                <ul className="pieces">
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/explore/detect-protect"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Detect and Protect</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/questions/why-we-dream"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Why We Dream</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/plosable/bee-microbiome"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Bacteria in the Belly of the Bee</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/cicada-life-cycle"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Cicada Life Cycle</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/evmed-edit/breast-milk-immunity"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Breast Milk Immunity</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/explore/antibiotics-bacteria"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Antibiotics vs Bacteria: An Evolutionary Battle</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/evmed-edit/hospital-antibiotic-resistance"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>
+                        Down the Drain: Hospital Sewage and Antibiotic Resistance
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/plosable/spies-among-ants"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Spies Among Ants</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://askabiologist.asu.edu/explore/cicadas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>Rising Cicadas</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="venuegroup">
+                <div className="venuehead">
+                  <h3>Other</h3>
+                  <span className="spacer"></span>
+                  <span className="run">Psychedelic Review</span>
+                </div>
+                <ul className="pieces">
+                  <li>
+                    <a
+                      href="https://psychedelicreview.com/opening-the-mushroom-pharmacopeia-the-case-of-norbaeocystin/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>
+                        Opening the Mushroom Pharmacopeia: The Case of
+                        Norbaeocystin
+                        <span className="source">Psychedelic Review</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://psychedelicreview.com/kambo-another-psychedelic-amphibian/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="arrow">→</span>
+                      <span>
+                        Kambô: Another Psychedelic Amphibian?
+                        <span className="source">Psychedelic Review</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── RESUME ───────────────────────────────── */}
+        <section className="strata" id="resume">
+          <div className="shell">
+            <div className="rail">
+              <h2>Resume</h2>
+              <div className="tick"></div>
+              <p className="label">Nine positions ✕ since 2015</p>
+              <p className="note">
+                Bench science, patent work, decentralized research funding, and
+                expert evaluation of AI systems doing science.
+              </p>
+            </div>
+
+            <div className="stack">
+              <a
+                className="resume-cta"
+                href="https://drive.google.com/file/d/1PISmKxt2GCtWJQNOOFS7mNq-uaxo6Oxb/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View full résumé <span aria-hidden="true">→</span>
+              </a>
+
+              <ul className="roles">
+                <li>
+                  <span className="when">
+                    2025 – <span className="current">Present</span>
+                  </span>
+                  <div>
+                    <span className="role">Scientific Evaluation Contractor</span>
+                    <span className="org">
+                      Edison Scientific and Office Hours
+                    </span>
+                    <p className="what">
+                      Evaluate AI systems performing scientific work across
+                      biology and chemistry; provide expert baselining for model
+                      training.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">
+                    2025 – <span className="current">Present</span>
+                  </span>
+                  <div>
+                    <span className="role">Scientific Advisor</span>
+                    <span className="org">
+                      Stealth Early-Stage Biotech (Women’s Health)
+                    </span>
+                    <p className="what">
+                      Advise on preclinical strategy, lead-candidate selection,
+                      and IND-enabling study design.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">Jan 2025 – Apr 2026</span>
+                  <div>
+                    <span className="role">Director, Science &amp; Dealflow</span>
+                    <span className="org">PsyDAO</span>
+                    <p className="what">
+                      Ran a decentralized funding system for open-science mental
+                      health research — sourcing, diligence, and funding
+                      decisions across 20+ proposals.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">Jan – Dec 2025</span>
+                  <div>
+                    <span className="role">Consulting Scientist</span>
+                    <span className="org">Beeard.ai</span>
+                    <p className="what">
+                      Evaluated outputs from an agentic biology platform,
+                      surfacing reasoning failures across neuroscience and
+                      chemistry.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">Apr – Dec 2024</span>
+                  <div>
+                    <span className="role">
+                      IP Technical Specialist, Life Sciences
+                    </span>
+                    <span className="org">Calyx Law</span>
+                    <p className="what">
+                      Evaluated biotech inventions for feasibility and
+                      competitive positioning; drafted patent and technical
+                      documentation.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">Apr – Aug 2023</span>
+                  <div>
+                    <span className="role">Technology Transfer Fellow</span>
+                    <span className="org">
+                      Skysong Innovations, Arizona State University
+                    </span>
+                    <p className="what">
+                      Evaluated life sciences inventions for technical merit and
+                      commercial pathways.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">Mar 2021 – Apr 2024</span>
+                  <div>
+                    <span className="role">IP Research Assistant</span>
+                    <span className="org">Calyx Law</span>
+                    <p className="what">
+                      Supported 25+ patent applications through prior-art
+                      research and freedom-to-operate analysis.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">Aug 2015 – Apr 2024</span>
+                  <div>
+                    <span className="role">
+                      Doctoral Researcher, Animal Behavior
+                    </span>
+                    <span className="org">Arizona State University</span>
+                    <p className="what">
+                      Characterized the honeybee blood-brain barrier end to end,
+                      adapting NanoSIMS from geochemistry to biology.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span className="when">2016 – 2018</span>
+                  <div>
+                    <span className="role">
+                      Science Writer &amp; Public Engagement
+                    </span>
+                    <span className="org">
+                      Ask A Biologist, Arizona State University
+                    </span>
+                    <p className="what">
+                      Managed the Dr. Biology reader Q&amp;A pipeline and
+                      developed science-education curriculum for K–12 audiences.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* ── FOOTER ───────────────────────────────────── */}
+      <footer>
+        <div className="footrule hatch"></div>
+        <div className="shell">
+          <span>Tyler P. Quigley, Ph.D.</span>
+          <span className="x">✕</span>
+          <a href="mailto:tpquigley13@gmail.com">tpquigley13@gmail.com</a>
+          <span className="x">✕</span>
           <a
             href="https://www.linkedin.com/in/tyler-quigley-ph-d-202931123/"
             target="_blank"
@@ -46,437 +642,12 @@ function App() {
           >
             LinkedIn
           </a>
-          <a
-            href="https://x.com/TyQuig"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <span className="x">✕</span>
+          <a href="https://x.com/TyQuig" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>
-        </nav>
-        <nav className="main-nav">
-          <a href="#science">Science</a>
-          <a href="#writing">Writing</a>
-          <a href="#resume">Resume</a>
-        </nav>
-      </header>
-
-      {/* ── SCIENCE ────────────────────────────────── */}
-      <section id="science" className="fade-section">
-        <div className="container narrow">
-          <h2 className="section-title">Science</h2>
-
-          <ul className="pub-list">
-            <li className="pub-item">
-              <a
-                href="https://drive.google.com/file/d/1vRGy15Fo1t0LBUt1Al5YcDK7Q6Yy0nv1/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Structure and Function of the Honeybee Blood-Brain Barrier
-              </a>
-              <span className="pub-meta">
-                Doctoral Dissertation · Arizona State University · 2024
-              </span>
-            </li>
-
-            <li className="pub-item">
-              <a
-                href="https://doi.org/10.1101/2024.09.27.615259"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Effect of Aging and <em>Varroa</em> Parasitism on the
-                Paracellular and Transcellular Permeability of the Honeybee
-                Blood-Brain Barrier
-              </a>
-              <span className="pub-meta">
-                Quigley, T.P., &amp; Amdam, G.V. (2026) · PLOS ONE, 21(3), e0343142
-              </span>
-            </li>
-
-            <li className="pub-item">
-              <a
-                href="https://doi.org/10.1101/2024.09.27.615080"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ultrastructural Organization of the Honeybee Blood-Brain
-                Barrier and Comparison with Age
-              </a>
-              <span className="pub-meta">
-                Quigley, T.P., &amp; Amdam, G.V. (2024) · bioRxiv preprint · DOI:
-                10.1101/2024.09.27.615080
-              </span>
-            </li>
-
-            <li className="pub-item">
-              <span className="pub-item-notlinked">
-                Tracking Vitellogenin Across the Honeybee Blood-Brain Barrier
-                with Nanoscale Secondary Ion Mass Spectrometry
-              </span>
-              <span className="pub-meta">
-                Quigley, T.P., &amp; Amdam, G.V. · Manuscript in preparation
-              </span>
-            </li>
-
-            <li className="pub-item">
-              <a
-                href="https://doi.org/10.1098/rstb.2019.0738"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Social Modulation of Ageing: Mechanisms, Ecology, Evolution
-              </a>
-              <span className="pub-meta">
-                Quigley, T.P., &amp; Amdam, G.V. (2021) · Philosophical
-                Transactions of the Royal Society B, 376(1823), 20190738
-              </span>
-            </li>
-
-            <li className="pub-item">
-              <a
-                href="https://doi.org/10.1016/j.cois.2019.06.012"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Honey Bees as Bioindicators of Changing Global Agricultural
-                Landscapes
-              </a>
-              <span className="pub-meta">
-                Quigley, T.P., Amdam, G.V., &amp; Harwood, G. (2019) · Current
-                Opinion in Insect Science, 35, 132–137
-              </span>
-            </li>
-
-            <li className="pub-item">
-              <a
-                href="https://drive.google.com/file/d/1QjicbQagZ1QJJkK3oleVCmJosvIS7oGG/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Honeybee Workers as Models of Aging
-              </a>
-              <span className="pub-meta">
-                Quigley, T.P., Amdam, G.V., &amp; Rueppell, O. (2018) · Conn's
-                Handbook of Models for Human Aging, 533–547 ·{' '}
-                <a
-                  href="https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128113530000403"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ScienceDirect →
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* ── WRITING ────────────────────────────────── */}
-      <section id="writing" className="fade-section">
-        <div className="container narrow">
-          <h2 className="section-title">Writing</h2>
-
-          <div className="writing-subsection">
-            <h3>The Tab</h3>
-            <p className="writing-sub-desc">
-              A psychedelic science newsletter — molecular mechanisms,
-              clinical trials, ethics. 2021–present.
-            </p>
-            <a
-              className="writing-sub-link"
-              href="https://psychedelicscience.substack.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read the newsletter →
-            </a>
-            <ul className="writing-links">
-              <li>
-                <a
-                  href="https://psychedelicscience.substack.com/p/the-chemistry-of-psychedelics"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Chemistry of Psychedelics →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://psychedelicscience.substack.com/p/good-friday-journal-club-4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Good Friday Journal Club #4 →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://psychedelicscience.substack.com/p/my-myc-mind"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  My, Myc, Mind →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://psychedelicscience.substack.com/p/how-cannabinoids-block-covid-19"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  How Cannabinoids Block COVID-19 →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://psychedelicscience.substack.com/p/ayahuasca-vine-and-its-anti-inflammatory"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ayahuasca Vine and Its Anti-Inflammatory Effects →
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="writing-subsection">
-            <h3>Ask A Biologist</h3>
-            <p className="writing-sub-desc">
-              Educational writing for K-12 and general audiences. Arizona
-              State University, 2016–2018.
-            </p>
-            <ul className="writing-links">
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/explore/detect-protect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Detect and Protect →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/questions/why-we-dream"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Why We Dream →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/plosable/bee-microbiome"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Bacteria in the Belly of the Bee →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/cicada-life-cycle"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Cicada Life Cycle →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/evmed-edit/breast-milk-immunity"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Breast Milk Immunity →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/explore/antibiotics-bacteria"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Antibiotics vs Bacteria: An Evolutionary Battle →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/evmed-edit/hospital-antibiotic-resistance"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Down the Drain: Hospital Sewage and Antibiotic Resistance →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/plosable/spies-among-ants"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Spies Among Ants →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://askabiologist.asu.edu/explore/cicadas"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Rising Cicadas →
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="writing-subsection">
-            <h3>Other</h3>
-            <ul className="writing-links">
-              <li>
-                <a
-                  href="https://psychedelicreview.com/opening-the-mushroom-pharmacopeia-the-case-of-norbaeocystin/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Opening the Mushroom Pharmacopeia: The Case of Norbaeocystin →
-                </a>
-                <span className="writing-links-source">Psychedelic Review</span>
-              </li>
-              <li>
-                <a
-                  href="https://psychedelicreview.com/kambo-another-psychedelic-amphibian/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Kambô: Another Psychedelic Amphibian? →
-                </a>
-                <span className="writing-links-source">Psychedelic Review</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* ── RESUME ─────────────────────────────────── */}
-      <section id="resume" className="fade-section">
-        <div className="container narrow">
-          <h2 className="section-title">Resume</h2>
-
-          <a
-            className="resume-download"
-            href="https://drive.google.com/file/d/1PISmKxt2GCtWJQNOOFS7mNq-uaxo6Oxb/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View full résumé →
-          </a>
-
-          <div className="timeline">
-            <div className="timeline-entry">
-              <p className="timeline-date">2025 – Present</p>
-              <p className="timeline-title">Scientific Evaluation Contractor</p>
-              <p className="timeline-org">Edison Scientific and Office Hours</p>
-              <p className="timeline-desc">
-                Evaluate AI systems performing scientific work across biology
-                and chemistry; provide expert baselining for model training.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">2025 – Present</p>
-              <p className="timeline-title">Scientific Advisor</p>
-              <p className="timeline-org">Stealth Early-Stage Biotech (Women's Health)</p>
-              <p className="timeline-desc">
-                Advise on preclinical strategy, lead-candidate selection, and
-                IND-enabling study design.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">Jan 2025 – Apr 2026</p>
-              <p className="timeline-title">Director, Science &amp; Dealflow</p>
-              <p className="timeline-org">PsyDAO</p>
-              <p className="timeline-desc">
-                Ran a decentralized funding system for open-science mental
-                health research — sourcing, diligence, and funding decisions
-                across 20+ proposals.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">Jan – Dec 2025</p>
-              <p className="timeline-title">Consulting Scientist</p>
-              <p className="timeline-org">Beeard.ai</p>
-              <p className="timeline-desc">
-                Evaluated outputs from an agentic biology platform, surfacing
-                reasoning failures across neuroscience and chemistry.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">Apr – Dec 2024</p>
-              <p className="timeline-title">IP Technical Specialist, Life Sciences</p>
-              <p className="timeline-org">Calyx Law</p>
-              <p className="timeline-desc">
-                Evaluated biotech inventions for feasibility and competitive
-                positioning; drafted patent and technical documentation.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">Mar 2021 – Apr 2024</p>
-              <p className="timeline-title">IP Research Assistant</p>
-              <p className="timeline-org">Calyx Law</p>
-              <p className="timeline-desc">
-                Supported 25+ patent applications through prior-art research
-                and freedom-to-operate analysis.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">Apr – Aug 2023</p>
-              <p className="timeline-title">Technology Transfer Fellow</p>
-              <p className="timeline-org">Skysong Innovations, Arizona State University</p>
-              <p className="timeline-desc">
-                Evaluated life sciences inventions for technical merit and
-                commercial pathways.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">Aug 2015 – Apr 2024</p>
-              <p className="timeline-title">Doctoral Researcher, Animal Behavior &amp; Neuroscience</p>
-              <p className="timeline-org">Arizona State University</p>
-              <p className="timeline-desc">
-                Characterized the honeybee blood-brain barrier end to end,
-                adapting NanoSIMS from geochemistry to biology.
-              </p>
-            </div>
-
-            <div className="timeline-entry">
-              <p className="timeline-date">2016 – 2018</p>
-              <p className="timeline-title">Science Writer &amp; Public Engagement</p>
-              <p className="timeline-org">Ask A Biologist, Arizona State University</p>
-              <p className="timeline-desc">
-                Managed the Dr. Biology reader Q&amp;A pipeline and developed
-                science-education curriculum for K-12 audiences.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FOOTER ─────────────────────────────────── */}
-      <footer>
-        <div className="container">
-          <span>Tyler P. Quigley</span>
-          <span className="sep">·</span>
-          <a href="mailto:tpquigley13@gmail.com">tpquigley13@gmail.com</a>
-          <span className="sep">·</span>
-          <span>&copy; 2026</span>
+          <span className="spacer"></span>
+          <span>© 2026</span>
         </div>
       </footer>
     </>
