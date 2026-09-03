@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect x="0" y="0" width="32" height="32" rx="7" fill="#f5f1e8"/>
+  <path d="M0 0H32V22L22 32H0Z" fill="#16141A"/>
   <text
     x="16"
-    y="17"
+    y="12"
     text-anchor="middle"
     dominant-baseline="central"
-    font-family="Georgia, 'Times New Roman', serif"
+    font-family="'Bodoni Moda', Didot, Georgia, serif"
     font-size="15"
     font-weight="700"
-    fill="#4f7286"
+    fill="#F06BA6"
   >TQ</text>
+  <path d="M6 23H24" stroke="#4B3B96" stroke-width="1.5"/>
 </svg>
