@@ -198,7 +198,7 @@ function App() {
                   <span className="year">2019</span>
                   <div>
                     <a
-                      href="https://doi.org/10.1016/j.cois.2019.06.012"
+                      href="https://www.sciencedirect.com/science/article/abs/pii/S2214574519300082"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
