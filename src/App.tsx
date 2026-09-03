@@ -6,10 +6,17 @@ function App() {
         <div className="shell label">
           <span>Currently</span>
           <span className="now">
-            Scientific evaluation contracting, Edison Scientific
+            Scientific Evals (Contract),{' '}
+            <a
+              href="https://edisonscientific.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Edison
+            </a>
           </span>
           <span className="x">✕</span>
-          <span className="open">Open to full-time roles</span>
+          <span className="open">Seeking full-time role</span>
         </div>
       </div>
 
@@ -482,7 +489,6 @@ function App() {
             <div className="rail">
               <h2>Resume</h2>
               <div className="tick"></div>
-              <p className="label">Nine positions ✕ since 2015</p>
               <p className="note">
                 Bench science, patent work, decentralized research funding, and
                 expert evaluation of AI systems doing science.
@@ -492,7 +498,7 @@ function App() {
             <div className="stack">
               <a
                 className="resume-cta"
-                href="https://drive.google.com/file/d/1PISmKxt2GCtWJQNOOFS7mNq-uaxo6Oxb/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1mqB1XTb5J4-ujLFYj1ZYIS6YFL5Li6Kb/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -502,7 +508,7 @@ function App() {
               <ul className="roles">
                 <li>
                   <span className="when">
-                    2025 – <span className="current">Present</span>
+                    2026 – <span className="current">Present</span>
                   </span>
                   <div>
                     <span className="role">Scientific Evaluation Contractor</span>
@@ -532,7 +538,7 @@ function App() {
                   </div>
                 </li>
                 <li>
-                  <span className="when">Jan 2025 – Apr 2026</span>
+                  <span className="when">2025 – 2026</span>
                   <div>
                     <span className="role">Director, Science &amp; Dealflow</span>
                     <span className="org">PsyDAO</span>
@@ -544,7 +550,7 @@ function App() {
                   </div>
                 </li>
                 <li>
-                  <span className="when">Jan – Dec 2025</span>
+                  <span className="when">2025</span>
                   <div>
                     <span className="role">Consulting Scientist</span>
                     <span className="org">Beeard.ai</span>
@@ -556,7 +562,7 @@ function App() {
                   </div>
                 </li>
                 <li>
-                  <span className="when">Apr – Dec 2024</span>
+                  <span className="when">2024</span>
                   <div>
                     <span className="role">
                       IP Technical Specialist, Life Sciences
@@ -570,7 +576,7 @@ function App() {
                   </div>
                 </li>
                 <li>
-                  <span className="when">Apr – Aug 2023</span>
+                  <span className="when">2023</span>
                   <div>
                     <span className="role">Technology Transfer Fellow</span>
                     <span className="org">
@@ -583,7 +589,7 @@ function App() {
                   </div>
                 </li>
                 <li>
-                  <span className="when">Mar 2021 – Apr 2024</span>
+                  <span className="when">2021 – 2024</span>
                   <div>
                     <span className="role">IP Research Assistant</span>
                     <span className="org">Calyx Law</span>
@@ -594,7 +600,7 @@ function App() {
                   </div>
                 </li>
                 <li>
-                  <span className="when">Aug 2015 – Apr 2024</span>
+                  <span className="when">2015 – 2024</span>
                   <div>
                     <span className="role">
                       Doctoral Researcher, Animal Behavior

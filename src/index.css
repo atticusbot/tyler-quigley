@@ -159,6 +159,16 @@ img {
   color: var(--ink);
 }
 
+.statusbar .now a {
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.statusbar .now a:hover {
+  color: var(--eosin);
+  border-bottom-color: var(--eosin);
+}
+
 .statusbar .open {
   font-weight: 500;
   color: var(--eosin);
