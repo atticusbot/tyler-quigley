@@ -122,7 +122,7 @@ function App() {
                   <span className="year">2026</span>
                   <div>
                     <a
-                      href="https://doi.org/10.1101/2024.09.27.615259"
+                      href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0343142"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
