@@ -553,7 +553,14 @@ function App() {
                   <span className="when">2025</span>
                   <div>
                     <span className="role">Consulting Scientist</span>
-                    <span className="org">Beeard.ai</span>
+                    <a
+                      className="org"
+                      href="https://beeard.ai/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Beeard.ai
+                    </a>
                     <p className="what">
                       Evaluated outputs from an agentic biology platform,
                       surfacing reasoning failures across neuroscience and

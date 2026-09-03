@@ -686,6 +686,16 @@ img {
   color: var(--hema);
 }
 
+a.org {
+  width: fit-content;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.18s ease;
+}
+
+a.org:hover {
+  border-bottom-color: var(--hema);
+}
+
 .roles .what {
   margin-top: 9px;
   font-size: var(--t-sm);
